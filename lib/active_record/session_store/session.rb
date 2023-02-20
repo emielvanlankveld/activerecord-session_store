@@ -4,7 +4,7 @@ require "thread"
 module ActiveRecord
   module SessionStore
     # The default Active Record class.
-    class Session < ActiveRecord::Base
+    class Session < ApplicationRecord
       extend ClassMethods
       SEMAPHORE = Mutex.new
 
